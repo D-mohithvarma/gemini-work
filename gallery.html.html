@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Modern Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: { 900: '#0F172A', 600: '#475569' },
+                        blue: { 600: '#2563EB' },
+                        ice: '#F8FAFC'
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans bg-[#FFFFFF] text-[#0F172A] antialiased">
+
+    <nav class="border-b border-[#F8FAFC] sticky top-0 bg-white/80 backdrop-blur-md z-50">
+        <div class="max-w-[1280px] mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-bold tracking-tight text-slate-900">NEXUS</a>
+            <div class="flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="index.html" class="hover:text-slate-900 transition-snappy">Home</a>
+                <a href="about.html" class="hover:text-slate-900 transition-snappy">About</a>
+                <a href="services.html" class="hover:text-slate-900 transition-snappy">Services</a>
+                <a href="gallery.html" class="text-blue-600 transition-snappy">Gallery</a>
+                <a href="contact.html" class="hover:text-slate-900 transition-snappy">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-[1280px] mx-auto px-6 py-16 text-center">
+        <h1 class="text-[2.25rem] font-bold text-slate-900 mb-4">Interface Showcases</h1>
+        <p class="text-slate-600 max-w-xl mx-auto text-[1rem]">A visual preview of production components deployed across active infrastructure pipelines.</p>
+    </header>
+
+    <main class="max-w-[1280px] mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group relative overflow-hidden bg-ice border border-slate-100 rounded-lg aspect-video flex items-center justify-center hover-lift shadow-sm">
+                <span class="font-mono text-sm text-slate-400 group-hover:scale-105 transition-snappy">[Data Dashboard Environment]</span>
+                <div class="absolute inset-0 bg-slate-900/90 opacity-0 group-hover:opacity-100 transition-snappy flex flex-col justify-end p-6">
+                    <h3 class="text-white font-semibold text-[1.5rem]">Analytics Engine</h3>
+                    <p class="text-slate-400 text-sm">Tokenized layout architecture</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden bg-ice border border-slate-100 rounded-lg aspect-video flex items-center justify-center hover-lift shadow-sm">
+                <span class="font-mono text-sm text-slate-400 group-hover:scale-105 transition-snappy">[Developer Log Console]</span>
+                <div class="absolute inset-0 bg-slate-900/90 opacity-0 group-hover:opacity-100 transition-snappy flex flex-col justify-end p-6">
+                    <h3 class="text-white font-semibold text-

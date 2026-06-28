@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Modern Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: { 900: '#0F172A', 600: '#475569' },
+                        blue: { 600: '#2563EB' },
+                        ice: '#F8FAFC'
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .transition-snappy { transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+</head>
+<body class="font-sans bg-[#FFFFFF] text-[#0F172A] antialiased">
+
+    <nav class="border-b border-[#F8FAFC] sticky top-0 bg-white/80 backdrop-blur-md z-50">
+        <div class="max-w-[1280px] mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-bold tracking-tight text-slate-900">NEXUS</a>
+            <div class="flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="index.html" class="hover:text-slate-900 transition-snappy">Home</a>
+                <a href="about.html" class="hover:text-slate-900 transition-snappy">About</a>
+                <a href="services.html" class="text-blue-600 transition-snappy">Services</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 hover:scale-[1.02] transition-snappy shadow-sm">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-[1280px] mx-auto px-6 py-16 text-center">
+        <h1 class="text-[2.25rem] font-bold text-slate-900 mb-4">Our Technical Capabilities</h1>
+        <p class="text-slate-600 max-w-xl mx-auto text-[1rem]">We offer deep-tier development implementations constructed explicitly around scalable front-end guidelines.</p>
+    </header>
+
+    <main class="max-w-[1280px] mx-auto px-6 pb-24 space-y-16">
+        
+        <div class="flex flex-col md:flex-row items-center gap-12 p-8 rounded-lg bg-ice">
+            <div class="w-full md:w-1/2">
+                <span class="text-xs font-bold text-blue-600 tracking-wider uppercase mb-2 block">Core Infrastructure</span>
+                <h2 class="text-[1.5rem] font-semibold text-slate-900 mb-4">Design System Engineering</h2>
+                <p class="text-slate-600 text-[1rem] leading-1.5 mb-6">We construct completely tailored UI kits mapping directly to tokenized structures. This guarantees that color, sizing variables, layout grids, and global component classes mirror your brand exactly across platforms.</p>
+                <ul class="space-y-2 text-sm font-medium text-slate-900">
+                    <li class="flex items-center gap-2">✔ WCAG AA Contrast Accessibility Compliance</li>
+                    <li class="flex items-center gap-2">✔ Standardized Token architecture</li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 bg-white h-48 rounded-md border border-slate-200 shadow-inner flex items-center justify-center text-slate-400 font-mono text-sm">
+                [Design System Tree Visualization]
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse items-center gap-12 p-8 rounded-lg bg-white border border-slate-100">
+            <div class="w-full md:w-1/2">
+                <span class="text-xs font-bold text-blue-600 tracking-wider uppercase mb-2 block">Animation Logistics</span>
+                <h2 class="text-[1.5rem] font-semibold text-slate-900 mb-4">Micro-Interaction Architecture</h2>
+                <p class="text-slate-600 text-[1rem] leading-1.5 mb-6">Interaction design that improves workflow speeds. By applying intentional cubic-bezier easing speeds (150ms transitions), components yield actionable spatial feedback instantly without heavy visual latency.</p>
+                <ul class="space-y-2 text-sm font-medium text-slate-900">
+                    <li class="flex items-center gap-2">✔ Fast/Snappy 150ms state changes</li>
+                    <li class="flex items-center gap-2">✔ Fluid layout shifting and loading skeletons</li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/2 bg-ice h-48 rounded-md border border-slate-200 flex items-center justify-center text-slate-400 font-mono text-sm">
+                [Micro-Interaction Framework Logic]
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="border-t border-[#F8FAFC] py-12 bg-white">
+        <div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <p class="text-sm text-slate-600">&copy; 2026 Modern Nexus. All rights reserved.</p>
+            <div class="flex gap-6 text-sm text-slate-600">
+                <a href="#" class="hover:text-slate-900 transition-snappy">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-900 transition-snappy">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

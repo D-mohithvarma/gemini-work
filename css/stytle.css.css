@@ -1,0 +1,31 @@
+/* Custom Global Utility Styles extending standard framework layouts */
+
+/* Global Snappy Transitions (Step 4 Ruleset) */
+.transition-snappy {
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Depth Lift Interactivity states */
+.hover-lift {
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(15, 23, 42, 0.05);
+}
+
+/* Explicit input focused enhancements */
+input:focus, textarea:focus {
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Shimmer Skeleton placeholder animation logic */
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+.skeleton-shimmer {
+    background: linear-gradient(90deg, #F8FAFC 25%, #E2E8F0 50%, #F8FAFC 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+}

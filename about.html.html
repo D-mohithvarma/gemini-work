@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Modern Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: { 900: '#0F172A', 600: '#475569' },
+                        blue: { 600: '#2563EB' },
+                        ice: '#F8FAFC'
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .transition-snappy { transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+</head>
+<body class="font-sans bg-[#FFFFFF] text-[#0F172A] antialiased">
+
+    <nav class="border-b border-[#F8FAFC] sticky top-0 bg-white/80 backdrop-blur-md z-50">
+        <div class="max-w-[1280px] mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-bold tracking-tight text-slate-900">NEXUS</a>
+            <div class="flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="index.html" class="hover:text-slate-900 transition-snappy">Home</a>
+                <a href="about.html" class="text-blue-600 transition-snappy">About</a>
+                <a href="services.html" class="hover:text-slate-900 transition-snappy">Services</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 hover:scale-[1.02] transition-snappy shadow-sm">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-[1280px] mx-auto px-6 py-24">
+        <div class="max-w-3xl mx-auto">
+            <span class="text-sm font-semibold tracking-wider text-blue-600 uppercase mb-2 block">Our Mission</span>
+            <h1 class="text-[2.25rem] font-bold leading-1.2 text-slate-900 mb-8">We build tools that elevate technical execution.</h1>
+            
+            <div class="space-y-6 text-[1rem] leading-1.5 text-slate-600">
+                <p>Founded with the philosophy that digital infrastructure should be both powerful and inherently clean, Nexus aims to eliminate visual clutter and technical friction.</p>
+                
+                <p>We work at the intersection of design systems and engineering architecture. By enforcing strict styling paradigms like the 8pt spatial rhythm and rigorous typographic hierarchies, we ensure that products scale seamlessly from small test configurations to massive user systems.</p>
+                
+                <blockquote class="border-l-4 border-blue-600 pl-4 py-2 my-8 text-slate-900 font-medium italic bg-ice rounded-r-md">
+                    "Simplicity is not the lack of clutter, but the presence of structural clarity."
+                </blockquote>
+
+                <p>Today, our frameworks power modern development environments globally, giving teams the baseline structure they need to construct complex systems cleanly.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-[#F8FAFC] py-12 bg-white mt-12">
+        <div class="max-w-[1280px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <p class="text-sm text-slate-600">&copy; 2026 Modern Nexus. All rights reserved.</p>
+            <div class="flex gap-6 text-sm text-slate-600">
+                <a href="#" class="hover:text-slate-900 transition-snappy">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-900 transition-snappy">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

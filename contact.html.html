@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Modern Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: { 900: '#0F172A', 600: '#475569' },
+                        blue: { 600: '#2563EB' },
+                        ice: '#F8FAFC'
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans bg-[#FFFFFF] text-[#0F172A] antialiased">
+
+    <nav class="border-b border-[#F8FAFC] sticky top-0 bg-white/80 backdrop-blur-md z-50">
+        <div class="max-w-[1280px] mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-bold tracking-tight text-slate-900">NEXUS</a>
+            <div class="flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="index.html" class="hover:text-slate-900 transition-snappy">Home</a>
+                <a href="about.html" class="hover:text-slate-900 transition-snappy">About</a>
+                <a href="services.html" class="hover:text-slate-900 transition-snappy">Services</a>
+                <a href="gallery.html" class="hover:text-slate-900 transition-snappy">Gallery</a>
+                <a href="contact.html" class="text-blue-600 transition-snappy">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-[1280px] mx-auto px-6 py-24 flex flex-col md:flex-row gap-16">
+        <div class="w-full md:w-1/3">
+            <h1 class="text-[2.25rem] font-bold text-slate-900 mb-4">Initialize connection.</h1>
+            <p class="text-slate-600 text-[1rem] leading-1.5 mb-8">Submit your production requirements, and our coordination team will review system allocations within one operational cycle.</p>
+            <div class="text-sm font-medium text-slate-900 space-y-2">
+                <p>⚡ endpoint: support@nexus.io</p>
+                <p>🌐 location: Node-447 (Global-East)</p>
+            </div>
+        </div>
+
+        <div class="w-full md:w-2/3 bg-ice border border-slate-100 p-8 rounded-lg shadow-sm">
+            <form id="contactForm" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-medium text-slate-900 mb-2" for="name">Identity Token (Name)</label>
+                    <input class="w-full bg-white border border-slate-200 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-blue-600 transition-snappy" type="text" id="name" required placeholder="Jane Doe">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-900 mb-2" for="email">Communication Destination (Email)</label>
+                    <input class="w-full bg-white border border-slate-200 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-blue-600 transition-snappy" type="email" id="email" required placeholder="jane@company.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-900 mb-2" for="message">Data Payload (Message)</label>
+                    <textarea class="w-full bg-white border border-slate-200 rounded-md px-4 py-2.5 text-sm focus:outline-none focus:border-blue-600 transition-snappy h-32 resize-none" id="message" required placeholder="Describe system context requirements..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white text-sm font-medium py-3 rounded-md hover:bg-blue-700 hover:scale-[1.01] transition-snappy shadow-sm">Transmit Payload</button>
+            </form>
+            <div id="formFeedback" class="hidden mt-4 p-4 rounded-md text-sm font-medium"></div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
